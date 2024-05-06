@@ -47,17 +47,17 @@ function BotCollection() {
 
   return (
     <div>
-      <h1>Bot Collection</h1>
+      <h1>Alvin's Bot Collection</h1>
       <h2>Enlisted Bots</h2>
       <div className="enlisted-bots">
         {enlistedBots.map(bot => (
           <div key={bot.id}>
             <p>{bot.name}</p>
             <img src={bot.avatar_url} alt={bot.name} />
-            <h3>{bot.name}</h3>
-            <p> {bot.health}</p>
-            <p>{bot.damage}</p>
-            <p>{bot.armor}</p>
+            <h3>Bot name : {bot.name}</h3>
+            <p> Health : {bot.health}</p>
+            <p>Damage : {bot.damage}</p>
+            <p>Armor : {bot.armor}</p>
             <button onClick={() => setEnlistedBots(prevBots => prevBots.filter(item => item.id !== bot.id))}>Remove</button>
           </div>
         ))}

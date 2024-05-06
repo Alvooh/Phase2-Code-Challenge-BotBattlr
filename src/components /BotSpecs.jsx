@@ -33,12 +33,13 @@ function BotSpecs() {
       {bot && (
         <div>
           <h2>{bot.name}</h2>
+          <img src={bot.avatar_url} />
           <p>Health: {bot.health}</p>
           <p>Damage: {bot.damage}</p>
           <p>Armor: {bot.armor}</p>
           <p>Class: {bot.bot_class}</p>
-          <button onClick={handleEnlist}>Enlist</button>
-          <Link to="/">Back to List View</Link>
+          
+          <Link to="/"><button>Back to list View</button></Link>
         </div>
       )}
     </div>
