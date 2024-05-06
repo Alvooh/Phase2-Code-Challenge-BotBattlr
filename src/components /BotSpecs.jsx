@@ -17,7 +17,14 @@ function BotSpecs() {
   }, [botId]);
 
   const handleEnlist = () => {
-    // Implement enlist bot logic
+    const enlistedBots = JSON.parse(localStorage.getItem('enlistedBots')) || [];
+    if (enlistedBots.includes(bot.id)) {
+      alert('This bot is already enlisted.');
+    } else {
+      const updatedEnlistedBots = [...enlistedBots, bot.id];
+      localStorage.setItem('enlistedBots', JSON.stringify(updatedEnlistedBots));
+      alert('Bot enlisted successfully!');
+    }
   };
 
   return (
