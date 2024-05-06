@@ -1,8 +1,7 @@
-// BotCollection.jsx
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import BotCard from './BotCard';
-import SortBar from './SortBar'; // Import the SortBar component
+import SortBar from './SortBar'; 
 
 function BotCollection() {
   const [bots, setBots] = useState([]);
@@ -62,7 +61,7 @@ function BotCollection() {
           </div>
         ))}
       </div>
-      {/* Render the SortBar component */}
+     
       <SortBar onSort={handleSort} />
       <div className="bot-collection">
         {bots.map(bot => (
