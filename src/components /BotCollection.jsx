@@ -47,8 +47,9 @@ function BotCollection() {
   return (
     <div>
       <h1>Alvin's Bot Collection</h1>
-      <h2>Enlisted Bots</h2>
+     
       <div className="enlisted-bots">
+      <h2 id='enlisted'>Enlisted Bots</h2>
         {enlistedBots.map(bot => (
           <div key={bot.id}>
             <p>{bot.name}</p>

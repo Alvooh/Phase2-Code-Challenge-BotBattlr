@@ -4,6 +4,14 @@
   padding: 2rem;
   text-align: center;
 }
+h1{
+  text-shadow: 2px 2px black;
+    text-align: center;
+    color: rgb(27, 172, 230);
+    font-family:"Impact";
+    font-size: 50px;
+}
+
 
 .logo {
   height: 6em;
@@ -122,9 +130,22 @@ button:active {
 }
 .enlisted-bots{
   display: flex;
+  text-align: center;
   flex-wrap: wrap;
   background-color: rgb(85, 172, 199);
+  
+  position: relative;
 }
+.enlisted-bots h2{
+  display: flex;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    color: white;
+    font-family:"Impact";
+    font-size: 50px;
+    margin-top: 0;
+}
+
 .bot-card-condensed{
   
   border: 1px solid gray;   
@@ -142,11 +163,16 @@ button:active {
       justify-content: center;
       align-items: center;
       height: 100vh;   
-      border: 1px solid #ccc; /* Add border with light gray color */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
-      padding: 20px; /* Add padding for better spacing */
-      margin-bottom: 20px; /* Add margin to create space between bot cards */ 
+      border: 1px solid #ccc; 
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+      padding: 20px; 
+      margin-bottom: 20px; 
       height:auto;
       margin: 10px;
   }
-  
+  #bot-specs{
+    border-radius: 100px 15px 100px 10px;
+    color:#008CBA;
+    
+   
+  }

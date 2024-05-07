@@ -28,10 +28,10 @@ function BotSpecs() {
   };
 
   return (
-    <div>
+    <div >
       <h1>Bot Specs</h1>
       {bot && (
-        <div>
+        <div id='bot-specs'>
           <h2>{bot.name}</h2>
           <img src={bot.avatar_url} />
           <p>Health: {bot.health}</p>
