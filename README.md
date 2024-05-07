@@ -9,10 +9,6 @@ The Bot Battle project is a web application that allows users to create and mana
 - View specifications of individual bots
 - Organize your army for battle
 
-## Live Demo
-
-You can access the live demo of the application [https://alvinsbotbattlr.netlify.app/](https://alvinsbotbattlr.netlify.app/).
-
 ## Technologies Used
 - React.js: Frontend framework for building user interfaces
 - React Router: Library for managing navigation in React applications
